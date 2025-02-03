@@ -43,8 +43,8 @@ dplyr
 #RUN R -e "remotes::install_github('chris31415926535/bivariatechoropleths')"
 
 # Copy the R script
-ADD ejam-open/app.R /home/epic/
-COPY . /srv/shiny-server/ 
+ADD app.R /home/epic/
+COPY . /srv/shiny-server/ /home/epic/
 # Expose ports
 EXPOSE 2000 2001
 
