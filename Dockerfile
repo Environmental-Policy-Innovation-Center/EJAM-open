@@ -56,4 +56,4 @@ EXPOSE 2000 2001
 
 # Set the working directory and command to run the app
 WORKDIR /home/epic
-CMD ["R", "-e", "httpuv::startServer('0.0.0.0', 2001, list(call = function(req) { list(status = 200, body = 'OK', headers = list('Content-Type' = 'text/plain')) })); shiny::runApp('/home/epic/tx-dw-tool-app.R', port = 2000, host = '0.0.0.0')"]
+CMD ["R", "-e", "httpuv::startServer('0.0.0.0', 2001, list(call = function(req) { list(status = 200, body = 'OK', headers = list('Content-Type' = 'text/plain')) })); shiny::runApp('/home/epic/app.R', port = 2000, host = '0.0.0.0')"]

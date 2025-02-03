@@ -140,8 +140,15 @@ jobs:
         ECS_SERVICE_COMPOSITE_NAME: ep_app__${{ env.ECS_SERVICE_NAME }}__${{ env.ENV }}_${{ env.AWS_REGION }}
       run: |
 
-        sudo apt-get update
-        sudo apt-get install -y awscli jq
+# Install AWS CLI v2 manually and validating version, install dependencies unzip and curl 
+
+            sudo apt-get update
+            sudo apt-get install -y curl unzip jq
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
+            unzip /tmp/awscliv2.zip -d /tmp
+            sudo /tmp/aws/install
+            rm -rf /tmp/awscliv2.zip /tmp/aws
+            aws --version
 
         #-----------------------
         # 1. Describe the task definition
