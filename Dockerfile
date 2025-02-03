@@ -20,6 +20,7 @@ WORKDIR /home/epic
 
 # Install required R packages from CRAN
 RUN install2.r --error \
+shiny \
 DT \
 data.table \
 foreach \
@@ -40,9 +41,8 @@ magrittr \
 dplyr
 
 
-# Copy the R script
-ADD app.R /home/epic/
-COPY . /srv/shiny-server/ /home/epic/
+#Copying folder contents 
+ADD . /home/epic/
 # Expose ports
 EXPOSE 2000 2001
 
