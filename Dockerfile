@@ -20,7 +20,7 @@ WORKDIR /home/epic
 
 # Install required R packages from CRAN
 RUN install2.r --error \
-  DT \
+DT \
 data.table \
 foreach \
 ggplot2 \
@@ -39,8 +39,6 @@ tidyr \
 magrittr \
 dplyr
 
-# Install the bivariatechoropleths package from GitHub
-#RUN R -e "remotes::install_github('chris31415926535/bivariatechoropleths')"
 
 # Copy the R script
 ADD app.R /home/epic/
