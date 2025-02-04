@@ -156,7 +156,13 @@ jobs:
         #-----------------------
         # 1. Describe the task definition
 
-        task_def_json=$(aws ecs describe-task-definition --task-definition ${{ env.ECS_FAMILY }})
+        LATEST_REVISION=$(aws ecs list-task-definitions --family-prefix ${{ env.ECS_FAMILY }} --sort DESC | jq -r '.taskDefinitionArns[0]')
+        if [[ "$LATEST_REVISION" == "null" ]]; then
+        echo "Error: No existing task definition found for ${{ env.ECS_FAMILY }}!"
+        exit 1
+        fi
+
+        task_def_json=$(aws ecs describe-task-definition --task-definition $LATEST_REVISION)
 
         #-----------------------
         # 2. Modify the JSON to use a new image and exclude unwanted properties
