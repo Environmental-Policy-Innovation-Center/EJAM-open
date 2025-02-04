@@ -48,6 +48,7 @@ tidyr \
 magrittr \
 dplyr
 
+RUN R -e "remotes::install_github('USEPA/EJAM-open')"
 
 #Copying folder contents 
 ADD . /home/epic/
