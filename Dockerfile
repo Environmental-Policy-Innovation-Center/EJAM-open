@@ -28,6 +28,7 @@ WORKDIR /home/epic
 
 # Install required R packages from CRAN
 RUN install2.r --error \
+remotes \
 shiny \
 DT \
 data.table \
