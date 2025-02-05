@@ -28,28 +28,66 @@ WORKDIR /home/epic
 
 # Install required R packages from CRAN
 RUN install2.r --error \
-remotes \
-shiny \
-DT \
-data.table \
-foreach \
-ggplot2 \
-glue \
-golem \
-leaflet \
-readxl \
-RMySQL \
-SearchTrees \
-shinycssloaders \
-shinyjs \
-sf \
-sp \
-tidyverse \
-tidyr \
-magrittr \
-dplyr
+    arrow \
+    attempt \
+    collapse \
+    config \
+    data.table \
+    DBI \
+    desc \
+    doSNOW \
+    dplyr \
+    DT \
+    foreach \
+    ggplot2 \
+    ggridges \
+    glue \
+    golem \
+    hrbrthemes \
+    htmltools \
+    leaflet \
+    leaflet.extras2 \
+    leaflet.extras \
+    magrittr \
+    methods \
+    openxlsx \
+    pdist \
+    pins \
+    piggyback \
+    pkgload \
+    readxl \
+    rhandsontable \
+    rmarkdown \
+    RMySQL \
+    SearchTrees \
+    shinydisconnect \
+    sf \
+    shiny \
+    shinycssloaders \
+    shinyjs \
+    sp \
+    tidyr \
+    tidyverse \
+    viridis \
+    webshot \
+    knitr \
+    spelling \
+    testthat.
+    AOI \
+    beepr \
+    datasets \
+    fipio \
+    htmlwidgets \
+    jsonlite \
+    mapview \
+    rnaturalearth \
+    rvest \
+    terra \
+    tidygeocoder \
+    units
 
 RUN R -e "remotes::install_github('USEPA/EJAM-open')"
+RUN R -e "remotes::install_github('mikejohnson51/AOI')"
 
 #Copying folder contents 
 ADD . /home/epic/
