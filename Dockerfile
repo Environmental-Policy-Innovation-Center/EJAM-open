@@ -72,8 +72,7 @@ RUN install2.r --error \
     webshot \
     knitr \
     spelling \
-    testthat.
-    AOI \
+    testthat \
     beepr \
     datasets \
     fipio \
