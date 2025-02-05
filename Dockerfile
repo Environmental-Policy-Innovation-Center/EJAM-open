@@ -83,7 +83,8 @@ RUN install2.r --error \
     rvest \
     terra \
     tidygeocoder \
-    units
+    units \
+    remotes 
     
 #adding ejam
 RUN R -e "remotes::install_github('USEPA/EJAM-open')"
