@@ -85,8 +85,11 @@ RUN install2.r --error \
     terra \
     tidygeocoder \
     units
-
+    
+#adding ejam
 RUN R -e "remotes::install_github('USEPA/EJAM-open')"
+
+#adding Areas of Interest
 RUN R -e "remotes::install_github('mikejohnson51/AOI')"
 
 #Copying folder contents 
