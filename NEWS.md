@@ -1,3 +1,8 @@
+# EJAM v2.4 (February 2025)
+- Revised all language based on executive orders, to refer to environmental and residential population data analysis, rather than EJ/EJScreen/etc.
+- Revised web links based on EJScreen website being offline
+- Some edits made considering github repositories and gh pages may change location or go offline
+
 # EJAM v2.32.1-EJAM (February 2025)
 ## Bug Fixes
 - Fixed metadata warning shown during loading of arrow datasets
@@ -35,6 +40,3 @@
 -   The [EJAM R package](https://usepa.github.io/EJAM/) is available as an open source resource you can 
     - clone from the [EJAM-open github repository](https://github.com/USEPA/EJAM-open) or 
     - install using the [installation instructions](https://usepa.github.io/EJAM/articles/1_installing.html)
-
-
--   The [EJScreen Multisite Tool](https://github.com/USEPA/EJAM-open/blob/main/inst/app/www/ejscreen-multisite-help-2025-01.pdf?raw=TRUE) (based on the [EJAM web app](https://usepa.github.io/EJAM/articles/0_webapp.html)) is available as part of [EJScreen](https://ejscreen.epa.gov/mapper/ "https://ejscreen.epa.gov/mapper/").

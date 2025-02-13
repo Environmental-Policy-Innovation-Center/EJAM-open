@@ -1,6 +1,6 @@
 ---
 output: github_document
-title: EJAM Environmental Justice Analysis Multisite tool
+title: Environmental and Residential Population Analysis Multisite tool
 ---
 
 # <img src="man/figures/logo659.png" align="right" width="220px"/>
@@ -47,7 +47,9 @@ knitr::opts_chunk$set(
 ```
 <!-- badges: end -->
 
-EJScreen's Environmental Justice Analysis Multisite Tool (EJAM) is a resource provided by the United States Environmental Protection Agency (US EPA). It lets you easily and quickly see demographic and environmental information aggregated within and across hundreds or thousands of places, all at the same time.
+The Environmental and Residential Population Analysis Multisite tool lets you easily and quickly see demographic and environmental information aggregated within and across hundreds or thousands of places, all at the same time.
+
+<!--    THIS SECTION WILL BE RESTORED / UNCOMMENTED ONCE THE URLS WORK/ PKGDOWN WEBSITE IS HOSTED AGAIN 
 
 ### What Can You Do with EJAM?
 
@@ -76,6 +78,9 @@ More information about the EJAM R package:
 -   [Reference Manual - EJAM R Functions and Data](https://usepa.github.io/EJAM/articles/index.html)
 
 -   [GitHub Repository - Open Source Code and Data](https://usepa.github.io/EJAM/articles/1_installing.html)
+-->
+
+<!--    THIS SECTION WILL BE REVISED / CLARIFIED ...
 
 #### Open-Source Code Policy
 
@@ -108,3 +113,8 @@ The United States Environmental Protection Agency (EPA) GitHub project code is p
 ### Contact
 
 If you have questions or comments, please email [ENVIROMAIL_GROUP\@epa.gov](mailto:ENVIROMAIL_GROUP@epa.gov?subject=EJAM%20package%20question) and put "EJAM package question" in the subject line.
+
+-->
+
+**The EPA seal and logo shall not be used in any manner to imply endorsement of any commercial product or activity by EPA or the United States Government.**
+
