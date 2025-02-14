@@ -1,0 +1,18 @@
+Change list for public launch: Feb 14, 2025
+** For Gabe: See local machine EJAM_Main_Feb_14 -> data-raw -> EJAM0_generic_terms_notes for conversions to EPA langauge
+
+
+ITEMS CHANGED FEB 14
+- EPA logo (in global.R & HTML) 
+and langauge on top banner (in manage-public-private.R (lines 30-40))
+- EJScreen webpage - removed (global.R 865)
+- EJScreen link - replaced with PEDP version (global.R 865)
+- Glossary and links to EPA commented out (global.R ~860-880)
+   -Note: can use Wayback link for EPA socioeconomic info https://web.archive.org/web/20250119040955/https://www.epa.gov/ejscreen/overview.      
+- Contact us swapped to screening-tools.com page
+- EPA logo swapped to EJAM logo in (community_report_helper_funs.R 593)
+- Disclaimer added in (app_ui.R 20-26)
+
+General Notes:
+- EJScreen reporting feature can be found in app server EJAM_Main_Feb_14
+  - startings of the EJAM api in the plumber folder

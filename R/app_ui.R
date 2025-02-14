@@ -16,6 +16,16 @@ app_ui  <- function(request) {
     # golem_add_external_resources() ####
     # Leave this function for adding external resources, specifying title of app, see end of this source file.
     golem_add_external_resources(),
+    
+    ## PEDP DISCLAIMER ##
+    HTML("<span style='font-size: 12px;'>
+        <b><i> &emsp; &emsp; This is an unofficial copy of EJAM hosted by the 
+        <a href='https://screening-tools.com/' target='_blank'>Public Environmental Data Project</a>. 
+        Full functionality is not currently available. Links and text may incorrectly suggest this site is affiliated with the EPA. Updated 02.14.25 </i></b>
+     </span>"),
+    ## PEDP DISCLAIMER END  ##
+    
+    
     # . ### #
     # _____App UI fluidPage starts here _______ ####
     fluidPage(
@@ -1428,7 +1438,7 @@ golem_add_external_resources <- function() {
     golem::bundle_resources(
       path = EJAM:::app_sys("app/www"),   #  points to  installed/EJAM/app/www which is same as   source/EJAM/inst/app/www
       
-      app_title = .app_title # BUT SEE ALSO THE TITLE IN HTML IN global.R 
+      app_title = .app_title,# BUT SEE ALSO THE TITLE IN HTML IN global.R 
       
     ),
     

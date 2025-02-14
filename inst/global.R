@@ -820,15 +820,21 @@ html_header_fmt <- tagList(
           margin-bottom: 0px; margin-top: 0px; margin-left: 0px; margin-right: 0px; 
           padding-bottom: 0px; padding-top: 0px; padding-left: 0px; padding-right: 0px">
 
-          <img id="titleLogo" src="https://ejscreen.epa.gov/mapper/images/epa_logo_horizBlue.png" 
-            style="margin: 0px; padding-bottom: 4px; padding-top: 4px; padding-left: 4px; padding-right: 4px" alt="EPA" title="EPA">
+<!--  hide EPA logo, use ejam favicon instead:
+
+        <img id="titleLogo" src="www/epa_logo_horizBlue.png" 
+              style="margin: 0px; padding-bottom: 4px; padding-top: 4px; padding-left: 4px; padding-right: 4px" alt="EPA" title="EPA">
+-->              
+        <img id="titleLogo" src="www/favicon.png" 
+              style="height: 20%; margin: 0px; padding-bottom: 4px; padding-top: 4px; padding-left: 38px; padding-right: 15px" alt="logo" title="logo">
+              
         </td>
 
         <td valign="bottom" style="line-height:34px; padding: 0px; 
-        border-bottom-color: #ffffff; border-top-color: #ffffff; border-left-color: #ffffff; border-right-color: #ffffff";
-        vertical-align: bottom;>
+          border-bottom-color: #ffffff; border-top-color: #ffffff; border-left-color: #ffffff; border-right-color: #ffffff";
+          vertical-align: bottom;>
         
-                <span style="font-size: 17pt; font-weight:700; font-family:Arial";>',   # large font for app title
+                <span style="font-size: 15pt; font-weight:700; font-family:Arial";>',   # larger font for app title   # large font for app title
                 
                 .app_title,   # see manage-public-private.R
                 
@@ -855,14 +861,19 @@ html_header_fmt <- tagList(
         <td valign="bottom" align="right";  style="line-height:34px; padding: 0px;
                 border-bottom-color: #ffffff; border-top-color: #ffffff; border-left-color: #ffffff; border-right-color: #ffffff";>
           <span id="homelinks">
+           <!-- 
             <a href="https://www.epa.gov/ejscreen" alt="Go to EJScreen home page" title="Go to EJScreen home page" target="_blank">EJScreen Website</a> | 
-            <a href="https://ejscreen.epa.gov/mapper/" alt="Go to EJScreen mapper"    title="Go to EJScreen mapper" target="_blank">EJScreen Mapper</a> | 
+           -->
+            <a href="https://pedp-ejscreen.azurewebsites.net/" alt="Go to EJScreen mapper"    title="Go to EJScreen mapper" target="_blank"> EJScreen Clone </a> | 
+          <!-- 
             <a href="https://www.epa.gov/ejscreen/overview-socioeconomic-indicators-ejscreen" alt="Go to EJScreen glossary page" title="Go to EJScreen glossary page" target="_blank">Glossary</a> | 
             <a href="www/ejscreen-multisite-help-2025-01.pdf" alt="Go to help document" title="Go to help document" target="_blank">Help</a> | 
-            <a href="mailto:ENVIROMAIL_GROUP@epa.gov?subject=EJScreen%20Multisite%20Tool%20Question" id="emailLink" alt="Contact Us" title="Contact Us">Contact Us</a>
+          -->
+            <a href="https://screening-tools.com/get-involved" alt="Go to contact" title="Go to contact" target="_blank">Contact Us</a> | 
           </span>&nbsp;&nbsp;
         </td>
  ',
+
 
                 
  '              

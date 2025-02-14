@@ -29,8 +29,8 @@ ejam_app_version  <- desc$get("Version")
 ejam_app_version <- substr(ejam_app_version, start = 1, stop = gregexpr('\\.',ejam_app_version)[[1]][2] - 1)
 
 .app_title <-  ifelse(isTRUE(golem_opts$isPublic), 
-                      "EJScreen Multisite Tool", 
-                      "EJAM"
+                      "EJAM Multisite Tool", 
+                      "EJAM Multisite Tool"
 )
 .app_version_headertext <- paste0("  (Version ", ejam_app_version, ")")
 ## keep title and version separate so we can use a different font size for each
