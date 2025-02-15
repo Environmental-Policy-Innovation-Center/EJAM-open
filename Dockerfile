@@ -93,7 +93,7 @@ RUN R -e "remotes::install_github('mikejohnson51/AOI')"
 #Copying folder contents 
 ADD . /home/epic/
 
-RUN R -e "remotes::install_github('USEPA/EJAM-open')"
+RUN R -e "remotes::install_local('/home/epic/')"
 
 
 
